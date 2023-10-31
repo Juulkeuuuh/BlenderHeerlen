@@ -1,0 +1,220 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+/* header */
+.stuckHeader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  /* height: 20px; */
+  /* background-color: #ffffff92; */
+  z-index: 999;
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
+  padding: 20px 20px;
+}
+
+.blenderTopLogo{
+  height: 40px;
+  width: auto;
+}
+
+.fullHeader{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/pngs/JuliaBW_blender_DanielaP-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.fullHeader .gradientOverlay{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.189), rgb(0, 0, 0));
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fullHeader .headTitles{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  /* font-size: 1.5rem; */
+  text-align: center;
+}
+
+.fullHeader h1{
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fullHeader h2{
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+
+
+
+
+
+
+
+/* main */
+
+.HalfPageBlock{
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.HalfPageBlockBackgroundOne{
+  background-image: url(../assets/pngs/Background1.jpg);
+}
+
+
+
+.HalfPageBlock .blockLeft{
+  width: 50%;
+  margin-top: 5vh;
+  height: 40vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HalfPageBlock .blockRight{
+  width: 50%;
+  margin-top: 5vh;
+  height: 40vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.LtoRGradient{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+
+}
+
+.glassEffect{
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(.1em);
+  backdrop-filter: blur(.1em);
+}
+
+h2{
+  color: white;
+  font-size: 1.5rem;
+  text-align: left;
+  width: 75%;
+  margin: auto;
+}
+
+p{
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  width: 75%;
+  margin: auto;
+}
+
+img{
+  width: 80%;
+  object-fit: cover;
+}
+
+
+
+/* footer */
+
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
+  font-size: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+  .fullHeader h1{
+    font-size: 1.5rem;
+  }
+  
+  .fullHeader h2{
+    font-size: .5rem;
+  }
+
+  p{
+    font-size: .5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .fullHeader h2{
+    font-size: .5rem;
+  }
+
+  p{
+    font-size: .5rem;
+  }
+}
