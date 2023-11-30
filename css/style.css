@@ -51,11 +51,21 @@ strong{
 .fullHeader{
   width: 100%;
   height: 100vh;
-  background-image: url(../assets/pngs/JuliaBW_blender_DanielaP-2.png);
+  /* background-image: url(../assets/pngs/JuliaBW_blender_DanielaP-2.png); */
+  /* background-image: url(../assets/pngs/Aftermovie-Blender-Heerlen.mp4); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+}
+
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .gradientOverlay{
   width: 100%;
@@ -68,6 +78,7 @@ strong{
 
 .fullHeader .headTitles{
   position: absolute;
+  width: 50%;
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, 0);
@@ -183,6 +194,23 @@ h2 strong{
   font-size: 1rem;
   font-weight: 900;
 
+}
+
+.headTitles p{
+  font-size: 1rem;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.headTitles h1{
+  font-size: 2rem;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
 p{
