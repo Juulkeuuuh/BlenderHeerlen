@@ -215,6 +215,16 @@ $(document).ready(function() {
 
   });
 
+
+
+  var deviceWidth = $(window).width();
+  var mobileWidth = 768;
+
+  if (deviceWidth < mobileWidth) {
+    // Remove the div with id "mobileDiv"
+    $('.video').remove();
+  }
+
 });
 
 

@@ -44,6 +44,8 @@ strong{
   padding: 20px 20px;
 }
 
+
+
 .blenderTopLogo{
   height: 40px;
   width: auto;
@@ -509,4 +511,26 @@ p.credits{
   .agenda{
     width: 80%;
   }
+}
+
+
+
+
+.agendaButtonStuck{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  background-color: #BDD890;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #BDD890;
+  margin-top: 10px;
+  padding: 5px 20px 8px 20px;
+  font-size: 1rem;
+  /* cursor: pointer; */
+  /* transition: all .3s ease-in-out; */
+  /* scale: 1! important; */
 }
