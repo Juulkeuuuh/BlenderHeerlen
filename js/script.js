@@ -216,3 +216,69 @@ $(document).ready(function() {
   });
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+  // Google Sheets API endpoint for retrieving data
+  // var sheetID = '10rhFO7KXavvnNdl80QrgZgnYrnyIA8NizoQGxmWmpKA';
+  // var apiKey = '55b704aa25578a56e3769e4e8808f6bd2e5700b2';
+  // var url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/Sheet1?key=${apiKey}`;
+
+
+  var sheetID = '10rhFO7KXavvnNdl80QrgZgnYrnyIA8NizoQGxmWmpKA';
+  var apiKey = 'AIzaSyD2LxLrDNhO-0haCtdpfxzJ9onNjeoJd4A';
+  var range = 'Blad1!A1:D10'; // Replace with your data range
+
+  // var url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/${range}?key=${apiKey}`;
+
+  var url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/Blad1?key=${apiKey}`;
+
+
+  // Fetch data from Google Sheets
+  $.get(url, function(data) {
+    // Extract values from the response
+    var values = data.values;
+
+    // Remove the header row (if present) - adjust based on your sheet structure
+    // if (values.length > 0) {
+    //   values.shift(); // Remove the first row if it's a header
+    // }
+
+    // Iterate through each row of the spreadsheet
+    values.forEach(function(row) {
+      var activity = {
+        title: row[0],
+        date: row[1],
+        text: row[2],
+        picture: row[3]
+      };
+
+      var block = `
+            <div class="activity-block">
+            ${activity.picture ? `<img src="${activity.picture}" alt="Activity Image">` : ''}
+
+              <div class="activity-text">
+                <h2>${activity.title}</h2>
+                <h4>${activity.date}</h4>
+                ${activity.text ? `<p>${activity.text}</p>` : ''}
+              </div>
+
+            </div>
+          `;
+      // Append the created block to the 'activities' div
+      $('#activities').append(block);
+    });
+  });
+
+});

@@ -9,6 +9,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   line-height: 1.4;
+  background: #000000;
 }
 
 a{
@@ -53,6 +54,7 @@ strong{
   height: 100vh;
   /* background-image: url(../assets/pngs/JuliaBW_blender_DanielaP-2.png); */
   /* background-image: url(../assets/pngs/Aftermovie-Blender-Heerlen.mp4); */
+  background-image: url(../assets/pngs/backgorund-video.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -415,5 +417,96 @@ p.credits{
 
   p{
     font-size: .5rem;
+  }
+}
+
+
+
+.agenda-background{
+  width: 100%;
+  background: linear-gradient(0deg, #000000, #1d3a27);
+
+}
+
+.agenda{
+
+  width: 50%;
+  margin: auto;
+  /* height: 100px; */
+  /* padding: 20px 0; */
+  padding-top: 100px;
+  z-index: 999;
+  color: #ffffff;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+}
+
+.agenda h1{
+  font-size: 2rem;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  line-height: 1;
+  margin-bottom: 10px;
+
+}
+
+/* .activity-block {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  /* background: pink; 
+} */
+
+
+
+.activity-block {
+  display: flex; /* Use flexbox for layout */
+  width: 100%;
+  /* border: 1px solid #ccc; */
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.157);
+  -webkit-backdrop-filter: blur(.1em);
+  backdrop-filter: blur(.1em);
+  border-radius: 5px;
+}
+
+.activity-block img {
+  width: 40%;
+  max-width: 200px; /* Adjust maximum width of the image */
+  aspect-ratio: 1;
+  height: auto;
+}
+.activity-text {
+  /* flex: 1; */
+  /* width: auto; */
+  padding-left: 10px; /* Adjust spacing between image and text */
+}
+
+.activity-text h2{
+  margin-top: 10px;
+  width: 100%;
+}
+
+.activity-text h4{
+  margin-top: 0px;
+  font-size: 12px;
+  width: 100%;
+  color: #BCEA91;
+}
+
+.activity-text p{
+  margin-top: 10px;
+  width: auto;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .agenda{
+    width: 80%;
   }
 }
