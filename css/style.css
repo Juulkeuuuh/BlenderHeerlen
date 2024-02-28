@@ -29,7 +29,10 @@ strong{
   text-align: center;
 }
 
+.extraMargin{
+  padding-top: 100px;
 
+}
 
 /* header */
 .stuckHeader{
@@ -72,7 +75,9 @@ strong{
   height: 100vh;
   /* background-image: url(../assets/pngs/JuliaBW_blender_DanielaP-2.png); */
   /* background-image: url(../assets/pngs/Aftermovie-Blender-Heerlen.mp4); */
-  background-image: url(../assets/pngs/gradient_blender.jpg);
+  /* background-image: url(../assets/pngs/gradient_blender.jpg); */
+  background-image: url(../assets/pngs/1734.jpg);
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -417,7 +422,7 @@ p.credits{
   }
 
   button{
-    font-size: .5rem;
+    font-size: .8rem;
   }
 }
 @media (max-width: 500px) {
