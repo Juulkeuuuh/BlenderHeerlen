@@ -571,3 +571,29 @@ p.credits{
   /* transition: all .3s ease-in-out; */
   /* scale: 1! important; */
 }
+
+
+
+
+.winningNumber{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  /* flex-wrap: wrap; */
+}
+
+.winningNumber h2{
+width: auto;
+text-align: center;
+margin-right: 10px;
+margin-top: 10px;
+}
+
+.winningNumber p{
+  width: auto;
+  text-align: center;
+margin-right: 10px;
+
+  }
