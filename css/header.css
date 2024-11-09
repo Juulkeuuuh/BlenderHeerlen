@@ -1,0 +1,122 @@
+/* Algemene styling voor de header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(53, 95, 90, 0.6); /* Groene tint behouden met verhoogde transparantie */
+  backdrop-filter: blur(15px); /* Glass effect met blur */
+  -webkit-backdrop-filter: blur(15px); /* Voor ondersteuning in Safari */
+  color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, backdrop-filter 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtiele lijn voor diepte */
+}
+
+.logo-img {
+  height: 40px; /* Pas dit aan naar de gewenste grootte */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Voor centreren */
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: color 0.3s;
+  display: block; /* Zorgt voor volledige klikbare ruimte */
+}
+
+.nav-list a:hover {
+  color: #BAE5FE; /* Lichtblauw */
+}
+
+/* Styling voor mobiel */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle .bar {
+  background-color: #ffffff;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: flex;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: rgba(53, 95, 90, 0.6); /* Groene tint met transparantie */
+    backdrop-filter: blur(15px); /* Glass effect met blur */
+    -webkit-backdrop-filter: blur(15px); /* Voor ondersteuning in Safari */
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 0 0 15px 15px; /* Afgeronde hoeken aan de onderkant */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    position: absolute;
+    top: 60px; /* Zorg dat het menu direct onder de header opent */
+    left: 0;
+    width: 100%; /* Volledige breedte */
+    display: none; /* Verberg standaard het menu */
+    z-index: 999;
+  }
+  
+  .nav-list.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Animatie */
+@keyframes slideIn {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}

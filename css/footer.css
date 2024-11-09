@@ -1,0 +1,94 @@
+.footer {
+  background-color: #355F5A; /* Donkergroen */
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 5px; /* Kleiner voor minder marge */
+  font-size: 20px;
+  border-bottom: 2px solid #BAE5FE; /* Lichtblauw */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section li {
+  margin: 3px 0; /* Kleiner voor minder marge */
+  font-size: 16px;
+}
+
+.footer-logo {
+  height: 50px; /* Pas dit aan naar de gewenste grootte */
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icon {
+  font-size: 30px; /* Icoon grootte */
+  color: #ffffff;
+  margin: 10px 0; /* Marge boven en onder */
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #BAE5FE; /* Lichtblauw */
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.contact-link {
+  color: #BAE5FE; /* Lichtblauw */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: #ffffff;
+}
+
+.contact-header {
+  margin-top: 20px; /* Pas deze waarde aan naar wens */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-section {
+      text-align: center;
+      margin-bottom: 15px;
+  }
+}
