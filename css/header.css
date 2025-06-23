@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(53, 95, 90, 0.6); /* Groene tint behouden met verhoogde transparantie */
+  background: rgba(0, 0, 0, 0.6); /* Groene tint behouden met verhoogde transparantie */
   backdrop-filter: blur(15px); /* Glass effect met blur */
   -webkit-backdrop-filter: blur(15px); /* Voor ondersteuning in Safari */
   color: #ffffff;
